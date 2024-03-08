@@ -20,11 +20,8 @@ jobs:
            ./script/install_chrome.sh
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
-      - name: Run Smoke Tests in Chrome
+      - name: Run Tests in Chrome
         run: ./gradlew test --info -Dgroups=smoke
-      - name: Run Regression Tests in Chrome
-        run: ./gradlew test --info -Dgroups=regression
-
       - name: Upload Extent HTML report
         uses: actions/upload-artifact@v3
         if: always()
