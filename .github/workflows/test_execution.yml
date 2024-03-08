@@ -30,4 +30,4 @@ jobs:
         if: always()
         with:
           name: test-results
-          path: testoutput/E2ETestReport_*.html
+          path: testoutput/report/E2ETestReport_*.html
