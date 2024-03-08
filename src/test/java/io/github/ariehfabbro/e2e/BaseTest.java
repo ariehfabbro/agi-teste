@@ -4,7 +4,7 @@ import static io.github.ariehfabbro.config.ConfigurationManager.config;
 
 import io.github.ariehfabbro.factory.BasePageFactory;
 import io.github.ariehfabbro.factory.BrowserFactory;
-import io.github.ariehfabbro.page.LoginPage;
+import io.github.ariehfabbro.page.SearchPage;
 import io.github.ariehfabbro.util.TestListener;
 
 import org.openqa.selenium.WebDriver;
@@ -17,7 +17,7 @@ public abstract class BaseTest {
 
     private final WebDriver driver =
             BrowserFactory.valueOf(config().browser().toUpperCase()).getDriver();
-    protected LoginPage loginPage;
+    protected SearchPage searchPage;
 
     protected String getTestDataFilePath(String path) {
         return config().baseTestDataPath() + path;
@@ -29,7 +29,7 @@ public abstract class BaseTest {
 
     @BeforeClass(alwaysRun = true)
     public void setup() {
-        loginPage = BasePageFactory.createInstance(driver, LoginPage.class);
+        searchPage = BasePageFactory.createInstance(driver, SearchPage.class);
     }
 
     @AfterClass(alwaysRun = true)

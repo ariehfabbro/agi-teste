@@ -24,3 +24,10 @@ jobs:
         run: ./gradlew test --info -Dgroups=smoke
       - name: Run Regression Tests in Chrome
         run: ./gradlew test --info -Dgroups=regression
+
+      - name: Upload Extent HTML report
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: test-results
+          path: testoutput/E2ETestReport_*.html

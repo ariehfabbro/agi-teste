@@ -9,7 +9,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public final class LoginPage extends BasePage {
+public final class SearchPage extends BasePage {
 
     @FindBy(id = "search-field")
     private WebElement txtUsername;
@@ -17,7 +17,7 @@ public final class LoginPage extends BasePage {
     @FindBy(className = "ast-search-menu-icon")
     private WebElement seachIcon;
 
-    public LoginPage open() {
+    public SearchPage open() {
         driver.get(config().baseUrl());
 
         return this;
@@ -28,7 +28,7 @@ public final class LoginPage extends BasePage {
         elem.sendKeys(text);
     }
 
-    public LoginPage typeSearchText(final String username) {
+    public SearchPage typeSearchText(final String username) {
         clearAndType(txtUsername, username);
 
         return this;
@@ -40,7 +40,7 @@ public final class LoginPage extends BasePage {
                 .getText();
     }
 
-    public LoginPage clickOnLogin() {
+    public SearchPage clickOnLogin() {
         seachIcon.click();
 
         return this;
