@@ -1,21 +1,18 @@
-package io.github.tahanima.e2e;
+package io.github.ariehfabbro.e2e;
 
-import static io.github.tahanima.util.DataProviderUtil.processTestData;
+import static io.github.ariehfabbro.util.DataProviderUtil.processTestData;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-import io.github.tahanima.dto.SearchDto;
-import io.github.tahanima.page.ResultsPage;
-import io.github.tahanima.util.TestRetry;
+import io.github.ariehfabbro.dto.SearchDto;
+import io.github.ariehfabbro.page.ResultsPage;
+import io.github.ariehfabbro.util.TestRetry;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
 
-/**
- * @author tahanima
- */
 public final class LoginTest extends BaseTest {
 
     private static final String FILE_PATH = "search.json";

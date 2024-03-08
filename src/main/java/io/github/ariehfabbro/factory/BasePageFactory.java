@@ -1,13 +1,10 @@
-package io.github.tahanima.factory;
+package io.github.ariehfabbro.factory;
 
-import io.github.tahanima.page.BasePage;
+import io.github.ariehfabbro.page.BasePage;
 
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.WebDriver;
 
-/**
- * @author tahanima
- */
 @Slf4j
 public final class BasePageFactory {
 

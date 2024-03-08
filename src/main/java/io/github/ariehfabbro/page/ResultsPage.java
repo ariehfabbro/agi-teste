@@ -1,11 +1,8 @@
-package io.github.tahanima.page;
+package io.github.ariehfabbro.page;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-/**
- * @author tahanima
- */
 public final class ResultsPage extends BasePage {
     @FindBy(xpath = "/html/body/div[1]/div/div/div[1]/section/h1")
     private WebElement titleSearch;

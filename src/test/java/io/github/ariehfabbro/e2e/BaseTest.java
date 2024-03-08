@@ -1,20 +1,17 @@
-package io.github.tahanima.e2e;
+package io.github.ariehfabbro.e2e;
 
-import static io.github.tahanima.config.ConfigurationManager.config;
+import static io.github.ariehfabbro.config.ConfigurationManager.config;
 
-import io.github.tahanima.factory.BasePageFactory;
-import io.github.tahanima.factory.BrowserFactory;
-import io.github.tahanima.page.LoginPage;
-import io.github.tahanima.util.TestListener;
+import io.github.ariehfabbro.factory.BasePageFactory;
+import io.github.ariehfabbro.factory.BrowserFactory;
+import io.github.ariehfabbro.page.LoginPage;
+import io.github.ariehfabbro.util.TestListener;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 
-/**
- * @author tahanima
- */
 @Listeners(TestListener.class)
 public abstract class BaseTest {
 

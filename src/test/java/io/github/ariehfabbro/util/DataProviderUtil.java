@@ -1,11 +1,11 @@
-package io.github.tahanima.util;
+package io.github.ariehfabbro.util;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.univocity.parsers.csv.CsvParserSettings;
 import com.univocity.parsers.csv.CsvRoutines;
 
-import io.github.tahanima.dto.BaseDto;
+import io.github.ariehfabbro.dto.BaseDto;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -16,9 +16,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author tahanima
- */
 @Slf4j
 public final class DataProviderUtil {
 

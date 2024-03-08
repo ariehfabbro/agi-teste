@@ -1,6 +1,6 @@
-package io.github.tahanima.report;
+package io.github.ariehfabbro.report;
 
-import static io.github.tahanima.config.ConfigurationManager.config;
+import static io.github.ariehfabbro.config.ConfigurationManager.config;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -11,9 +11,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Objects;
 
-/**
- * @author tahanima
- */
 public final class ExtentReportManager {
 
     private ExtentReportManager() {}

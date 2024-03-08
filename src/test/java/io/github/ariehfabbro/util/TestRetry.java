@@ -1,11 +1,8 @@
-package io.github.tahanima.util;
+package io.github.ariehfabbro.util;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
-/**
- * @author tahanima
- */
 public class TestRetry implements IRetryAnalyzer {
 
     private int retryCount = 0;

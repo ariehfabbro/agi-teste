@@ -1,6 +1,6 @@
-package io.github.tahanima.factory;
+package io.github.ariehfabbro.factory;
 
-import static io.github.tahanima.config.ConfigurationManager.config;
+import static io.github.ariehfabbro.config.ConfigurationManager.config;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,9 +10,6 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 import java.time.Duration;
 
-/**
- * @author tahanima
- */
 public enum BrowserFactory {
 
     CHROME {

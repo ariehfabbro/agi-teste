@@ -1,15 +1,12 @@
-package io.github.tahanima.page;
+package io.github.ariehfabbro.page;
 
-import static io.github.tahanima.config.ConfigurationManager.config;
+import static io.github.ariehfabbro.config.ConfigurationManager.config;
 
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-/**
- * @author tahanima
- */
 public abstract class BasePage {
 
     protected WebDriver driver;

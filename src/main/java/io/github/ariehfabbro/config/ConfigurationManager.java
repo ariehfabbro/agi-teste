@@ -1,10 +1,7 @@
-package io.github.tahanima.config;
+package io.github.ariehfabbro.config;
 
 import org.aeonbits.owner.ConfigCache;
 
-/**
- * @author tahanima
- */
 public final class ConfigurationManager {
 
     private ConfigurationManager() {}

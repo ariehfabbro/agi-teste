@@ -1,11 +1,8 @@
-package io.github.tahanima.config;
+package io.github.ariehfabbro.config;
 
 import org.aeonbits.owner.Config;
 import org.aeonbits.owner.Config.*;
 
-/**
- * @author tahanima
- */
 @LoadPolicy(LoadType.MERGE)
 @Sources({"system:properties", "classpath:config.properties"})
 public interface Configuration extends Config {

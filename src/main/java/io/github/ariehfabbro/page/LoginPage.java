@@ -1,17 +1,14 @@
-package io.github.tahanima.page;
+package io.github.ariehfabbro.page;
 
-import static io.github.tahanima.config.ConfigurationManager.config;
+import static io.github.ariehfabbro.config.ConfigurationManager.config;
 
-import io.github.tahanima.factory.BasePageFactory;
+import io.github.ariehfabbro.factory.BasePageFactory;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-/**
- * @author tahanima
- */
 public final class LoginPage extends BasePage {
 
     @FindBy(id = "search-field")

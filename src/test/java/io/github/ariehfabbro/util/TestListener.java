@@ -1,12 +1,12 @@
-package io.github.tahanima.util;
+package io.github.ariehfabbro.util;
 
-import static io.github.tahanima.config.ConfigurationManager.config;
+import static io.github.ariehfabbro.config.ConfigurationManager.config;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.MediaEntityBuilder;
 
-import io.github.tahanima.dto.BaseDto;
-import io.github.tahanima.report.ExtentReportManager;
+import io.github.ariehfabbro.dto.BaseDto;
+import io.github.ariehfabbro.report.ExtentReportManager;
 
 import org.apache.commons.text.StringEscapeUtils;
 import org.testng.ITestContext;
@@ -14,9 +14,6 @@ import org.testng.ITestListener;
 import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 
-/**
- * @author tahanima
- */
 public class TestListener implements ITestListener {
 
     private static final ExtentReports REPORT = ExtentReportManager.createReport();
