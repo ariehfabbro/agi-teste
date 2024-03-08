@@ -1,0 +1,12 @@
+[
+  {
+    "testCaseId": "TC-1",
+    "testCaseDescription": "Search with existent content, it should redirect to 'Search Content' page",
+    "searchText": "open banking"
+  },
+  {
+    "testCaseId": "TC-2",
+    "testCaseDescription": "Search with invalid input, it should redirect to 'Search Content' page",
+    "searchText": "op3n banking"
+  }
+]
